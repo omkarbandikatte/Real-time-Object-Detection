@@ -34,7 +34,7 @@ def detect_objects(frame):
                 cv2.putText(frame, label, (startX, max(startY - 10, 10)), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 0, 0), 2)
     return frame
 
-st.title("Real-Time Object Detection with MobileNet SSD")
+st.title("Real-Time Person Detection with MobileNet SSD")
 
 if "run" not in st.session_state:
     st.session_state.run = False
@@ -104,7 +104,7 @@ st.markdown("""
 <body>
     <div class="background"></div>
     <div class="container">
-        <h1 class="title">Real-time Object Detection</h1>
+        <h1 class="title">Real-time Person Detection</h1>
         <div class="video-container">
             <!-- The video feed is provided by the Streamlit app above -->
             <div id="loading" style="display: none;">Loading...</div>
